@@ -1,0 +1,71 @@
+No.1
+* creating a virtual environment
+ensure youre in the directory that you want the virtual environment to be created.
+run this following command line in your command prompt
+->python -m venv mywork
+this command simply tells python to make virtual environment with the name mywork 
+
+* Activating the Virtual Environment 
+run this command line
+->workon mywork
+this command line will immediately activate the virtual environment named mywork earlier created in the directory.
+
+* Installing Django Package
+run this command line
+->pip install django
+this command line will install django and it other dependency files in the virtual environment.
+
+* Exporting Installed dependencies
+run this command line 
+->pip freeze tzdata
+this command line will export or freeze the tzdata which is one of the dependency files that was install alongside django
+
+* Deactivating the Virtual Environment
+run this command line 
+->Deactivate
+this command will immediately deactivate the virtual environment in use 
+
+
+No.2
+* Conditional Statement
+a = 5
+b = 3
+if a > b:
+    print(str(a) + 'is greater than' + str(b))
+else:
+    print(str(a) + 'is not greater than' + str(b))
+
+* Iterative Statement
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+* Assignment Statement
+x = 5
+
+
+No.3
+* Global and Local Variables
+-> x = 'awesome'
+the 'x' in the code is a global variable 
+-> def Myfunc():
+    x = 'fantastic'
+the 'x' in this block of code is a local variable which can only be used inside the function named
+myfunc. while, the first 'x' which is a global variable can be used both innside and outside myfunc
+(but the 'global' keyword must be used, this will tell python that we are refering to the global variable).
+
+
+No.4
+* Differenciate between Syntax and Semantic Error
+-> Syntax Errors are similar to grammar or spelling errors in python or any other programming languages.
+missing symbols such as comma, brackets, colon, misspelling keywords, having incorrect indentation are 
+common Syntax errors in python.
+while Semantic errors are more of a logic error. 
+this means that the code might run successfully but wont produce the desired result that the programmer wants e.g.
+-> num1 = input('enter a number: ')
+-> num2 = input('enter another number: ')
+-> sum = num1 + num2
+-> print ('the sum of', num1, 'and', num2, 'equals', sum)
+the result of this code will be a concatenation of num1 and num2 not the addition
+this code doesnt raise an error message and it run successfully but didnt produce the desired result. 
